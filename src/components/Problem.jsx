@@ -48,7 +48,7 @@ export default function Problem() {
           </h2>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 gap-8 md:gap-4 items-stretch relative">
+        <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-stretch relative">
           {/* Kibera side */}
           <motion.div
             variants={fadeUp}
@@ -72,14 +72,14 @@ export default function Problem() {
             </div>
           </motion.div>
 
-          {/* GAP element - centered between columns */}
+          {/* GAP element - centered in the gutter between columns on desktop */}
           <motion.div
             initial={{ scale: 0, opacity: 0 }}
             animate={inView ? { scale: 1, opacity: 1 } : { scale: 0, opacity: 0 }}
             transition={{ duration: 0.6, delay: 0.8, type: 'spring' }}
-            className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-20 hidden md:flex"
+            className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-20 hidden md:flex pointer-events-none"
           >
-            <div className="w-20 h-20 rounded-full bg-gold flex items-center justify-center shadow-lg shadow-gold/20">
+            <div className="w-20 h-20 rounded-full bg-gold flex items-center justify-center shadow-lg shadow-gold/20 ring-8 ring-black">
               <span className="font-serif text-lg font-bold text-black tracking-wider">GAP</span>
             </div>
           </motion.div>

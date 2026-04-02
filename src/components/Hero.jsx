@@ -2,7 +2,7 @@ import { useEffect, useRef } from 'react'
 import { motion } from 'framer-motion'
 import CountUp from './CountUp'
 
-function ParticleCanvas() {
+function HeroBackground() {
   const canvasRef = useRef(null)
 
   useEffect(() => {
@@ -11,6 +11,7 @@ function ParticleCanvas() {
     const ctx = canvas.getContext('2d')
     let animationId
     let particles = []
+    let time = 0
 
     const resize = () => {
       canvas.width = window.innerWidth
@@ -52,8 +53,40 @@ function ParticleCanvas() {
       particles.push(new Particle())
     }
 
+    const drawDiagonalGrid = (t) => {
+      const spacing = 40
+      const drift = (t * 0.008) % spacing
+      const pulse = 0.03 + Math.sin(t * 0.002) * 0.01 // oscillates between 0.02 and 0.04
+
+      ctx.save()
+      ctx.strokeStyle = `rgba(212, 160, 23, ${pulse})`
+      ctx.lineWidth = 0.5
+
+      // Diagonal lines going top-left to bottom-right
+      for (let i = -canvas.height; i < canvas.width + canvas.height; i += spacing) {
+        ctx.beginPath()
+        ctx.moveTo(i + drift, 0)
+        ctx.lineTo(i + drift + canvas.height, canvas.height)
+        ctx.stroke()
+      }
+
+      // Diagonal lines going top-right to bottom-left
+      for (let i = -canvas.height; i < canvas.width + canvas.height; i += spacing) {
+        ctx.beginPath()
+        ctx.moveTo(i - drift, 0)
+        ctx.lineTo(i - drift - canvas.height, canvas.height)
+        ctx.stroke()
+      }
+
+      ctx.restore()
+    }
+
     const animate = () => {
+      time++
       ctx.clearRect(0, 0, canvas.width, canvas.height)
+
+      // Subtle drifting diagonal grid pattern
+      drawDiagonalGrid(time)
 
       // Gold light leak gradient
       const grd = ctx.createRadialGradient(
@@ -102,7 +135,7 @@ export default function Hero() {
 
   return (
     <section id="hero" className="relative min-h-screen flex items-center overflow-hidden">
-      <ParticleCanvas />
+      <HeroBackground />
 
       {/* Parallax overlay gradient */}
       <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-black z-[1]" />
