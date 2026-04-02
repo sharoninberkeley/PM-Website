@@ -7,8 +7,23 @@ export default function CountUp({ end, duration = 2000, prefix = '', suffix = ''
   const hasAnimated = useRef(false)
 
   useEffect(() => {
-      const id = requestAnimationFrame(animate)
-      return () => cancelAnimationFrame(id)
+    if (inView && !hasAnimated.current) {
+      hasAnimated.current = true
+      const startTime = Date.now()
+      const animate = () => {
+        const elapsed = Date.now() - startTime
+        const progress = Math.min(elapsed / duration, 1)
+        const eased = 1 - Math.pow(1 - progress, 3)
+        setCount(Math.floor(eased * end))
+        if (progress < 1) {
+          requestAnimationFrame(animate)
+        } else {
+          setCount(end)
+        }
+      }
+      requestAnimationFrame(animate)
+    }
+  }, [inView, end, duration])
 
   return (
     <span ref={ref} className={className}>
