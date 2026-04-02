@@ -65,7 +65,7 @@ export default function Navbar() {
           aria-label="Toggle menu"
         >
           <motion.span
-            animate={mobileOpen ? { rotate: 45, y: 6 } : { rotate: 0, y: 0 }}
+            animate={mobileOpen ? { rotate: 45, y: 8 } : { rotate: 0, y: 0 }}
             className="block w-6 h-0.5 bg-gold"
           />
           <motion.span
