@@ -1,17 +1,688 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Chanuka - Training young women from Kibera in AI and digital skills, connecting them to Nairobi's growing digital economy." />
-    <title>Chanuka — Where a Skill Becomes a Shield</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-  </head>
-  <body class="bg-[#0A0A0A] text-white">
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
-</html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="PM Digital - Leading Digital Marketing Agency in Nairobi, Kenya. Specializing in digital marketing, PM Institute social impact training, and PM Gigs freelance solutions." />
+        <meta name="author" content="PM Digital" />
+        <title>PM Digital - Digital Marketing Agency Nairobi</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <style>
+            /* Purple Color Override - More comprehensive */
+            :root {
+                --bs-primary: #6f42c1 !important;
+                --bs-primary-rgb: 111, 66, 193 !important;
+            }
+            
+            .bg-primary {
+                background-color: #6f42c1 !important;
+            }
+            
+            .text-primary {
+                color: #6f42c1 !important;
+            }
+            
+            .btn-primary {
+                background-color: #6f42c1 !important;
+                border-color: #6f42c1 !important;
+            }
+            
+            .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+                background-color: #5a32a3 !important;
+                border-color: #5a32a3 !important;
+            }
+            
+            .btn-xl {
+                background-color: #6f42c1 !important;
+                border-color: #6f42c1 !important;
+            }
+            
+            .btn-xl:hover {
+                background-color: #5a32a3 !important;
+                border-color: #5a32a3 !important;
+            }
+            
+            a {
+                color: #6f42c1;
+            }
+            
+            a:hover {
+                color: #5a32a3;
+            }
+            
+            .timeline::before {
+                background-color: #6f42c1 !important;
+            }
+            
+            .timeline-image {
+                background-color: #6f42c1 !important;
+            }
+            
+            .portfolio-caption {
+                background-color: #6f42c1 !important;
+            }
+            
+            .page-section .page-section-heading, .page-section .section-heading {
+                color: #6f42c1 !important;
+            }
+            
+            /* Video Header */
+            .masthead {
+                position: relative;
+                background-color: #000;
+                height: 100vh;
+                min-height: 40rem;
+                width: 100%;
+                overflow: hidden;
+            }
+            
+            .masthead video {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                min-width: 100%;
+                min-height: 100%;
+                width: auto;
+                height: auto;
+                z-index: 0;
+                transform: translateX(-50%) translateY(-50%);
+            }
+            
+            .masthead .container {
+                position: relative;
+                z-index: 2;
+            }
+            
+            .masthead:before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: rgba(111, 66, 193, 0.7);
+                z-index: 1;
+            }
+            
+            /* Client logos styling */
+            .img-brand {
+                max-height: 80px;
+                filter: grayscale(100%) brightness(70%);
+                transition: all 0.3s ease;
+            }
+            .img-brand:hover {
+                filter: grayscale(0%) brightness(100%);
+                transform: scale(1.1);
+            }
+            
+            /* Timeline fixes */
+            .timeline-image h4 {
+                background-color: #6f42c1 !important;
+                color: white !important;
+                margin: 0;
+                padding: 1rem;
+                text-align: center;
+            }
+            
+            /* Service icons */
+            .fa-stack-2x.text-primary {
+                color: #6f42c1 !important;
+            }
+        </style>
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand" href="#page-top"><img src="assets/img/navbar-logo.svg" alt="PM Digital" /></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars ms-1"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead with Video-->
+        <header class="masthead">
+            <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+                <source src="assets/video/header-bg.mp4" type="video/mp4">
+                <!-- Fallback image if video doesn't load -->
+                <img src="assets/img/header-fallback.jpg" alt="PM Digital Header" style="width: 100%; height: 100%; object-fit: cover;">
+            </video>
+            <div class="container">
+                <div class="masthead-subheading">Welcome To PM Digital!</div>
+                <div class="masthead-heading text-uppercase">We Drive Sales & Visibility</div>
+                <p class="masthead-description">Our experts build brands that resonate with your target audience, fueling business growth and success across Africa.</p>
+                <a class="btn btn-primary btn-xl text-uppercase" href="#services">Tell Me More</a>
+            </div>
+        </header>
+        <!-- Services-->
+<section class="page-section" id="services">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">Our Services</h2>
+            <h3 class="section-subheading text-muted">Comprehensive digital solutions for business growth</h3>
+        </div>
+        <div class="row text-center">
+            <div class="col-md-4">
+                <span class="fa-stack fa-4x">
+                    <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                    <i class="fas fa-rocket fa-stack-1x fa-inverse"></i>
+                </span>
+                <h4 class="my-3">PM Digital</h4>
+                <p class="text-muted">Full-service digital marketing agency specializing in brand development, social media marketing, and growth strategies tailored for African markets.</p>
+            </div>
+            <div class="col-md-4">
+                <span class="fa-stack fa-4x">
+                    <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                    <i class="fas fa-graduation-cap fa-stack-1x fa-inverse"></i>
+                </span>
+                <h4 class="my-3">Institute.</h4>
+                <p class="text-muted">Social impact initiative training youth from underserved communities with digital skills to reduce crime rates and create employment pathways.</p>
+            </div>
+            <div class="col-md-4">
+                <span class="fa-stack fa-4x">
+                    <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                    <i class="fas fa-briefcase fa-stack-1x fa-inverse"></i>
+                </span>
+                <h4 class="my-3">Gigs.</h4>
+                <p class="text-muted">Connecting our trained graduates with clients through platforms like Fiverr and Upwork, while providing ongoing mentorship and client matching.</p>
+            </div>
+        </div>
+    </div>
+</section>
+        <!-- Portfolio Grid-->
+        <section class="page-section bg-light" id="portfolio">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Our Portfolio</h2>
+                    <h3 class="section-subheading text-muted">Showcasing our diverse range of digital expertise</h3>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Portfolio item 1-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/portfolio/1.jpg" alt="UI/UX Design" />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">UI/UX Design</div>
+                                <div class="portfolio-caption-subheading text-muted">User Experience</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Portfolio item 2-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/portfolio/2.jpg" alt="Web Development" />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Web Development</div>
+                                <div class="portfolio-caption-subheading text-muted">Design & Development</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Portfolio item 3-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal3">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/portfolio/3.jpg" alt="Photography & Video" />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Photography & Video</div>
+                                <div class="portfolio-caption-subheading text-muted">Visual Content</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+                        <!-- Portfolio item 4-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal4">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/portfolio/4.jpg" alt="Digital Marketing" />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Digital Marketing</div>
+                                <div class="portfolio-caption-subheading text-muted">Growth Strategies</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
+                        <!-- Portfolio item 5-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal5">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/portfolio/5.jpg" alt="Branding & Printing" />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Branding & Printing</div>
+                                <div class="portfolio-caption-subheading text-muted">Brand Identity</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <!-- Portfolio item 6-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal6">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/portfolio/6.jpg" alt="Graphic Design" />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Graphic Design</div>
+                                <div class="portfolio-caption-subheading text-muted">Creative Design</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- About-->
+        <section class="page-section" id="about">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">About</h2>
+                    <h3 class="section-subheading text-muted">Our journey to becoming Nairobi's leading digital agency.</h3>
+                </div>
+                <ul class="timeline">
+                    <li>
+                        <div class="timeline-image">
+                            <div class="timeline-image-container">
+                                <img class="rounded-circle img-fluid" src="assets/img/about/1.jpg" alt="PM Digital founding" />
+                            </div>
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>November 2022</h4>
+                                <h4 class="subheading">Our Humble Beginnings</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">PM Digital was founded in Nairobi with a vision to transform digital marketing for African businesses, starting with local MSMBs and expanding across the region.</p></div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image">
+                            <div class="timeline-image-container">
+                                <img class="rounded-circle img-fluid" src="assets/img/about/2.jpg" alt="Transition to Full Service" />
+                            </div>
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>March 2023</h4>
+                                <h4 class="subheading">Transition to Full Service</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">We expanded our services to include comprehensive digital solutions, from web development to full-scale digital marketing campaigns for major brands across Kenya.</p></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-image">
+                            <div class="timeline-image-container">
+                                <img class="rounded-circle img-fluid" src="assets/img/about/3.jpg" alt="PM Institute launch" />
+                            </div>
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>April 2024</h4>
+                                <h4 class="subheading">PM Institute is Born</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">Recognizing the need for digital skills development in underserved communities, we launched PM Institute to train youth from slums with digital skills, reducing crime rates and creating employment pathways.</p></div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image">
+                            <div class="timeline-image-container">
+                                <img class="rounded-circle img-fluid" src="assets/img/about/4.jpg" alt="PM Gigs launch" />
+                            </div>
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>May 2025</h4>
+                                <h4 class="subheading">PM Gigs Platform Launch</h4>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">We launched PM Gigs to place trained students who didn't get job placements, teaching them how to get clients on Fiverr, Upwork and connecting them with clients looking for affordable, quality digital services.</p></div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image">
+                            <div class="timeline-image-square">
+                                <h4>
+                                    Be Part
+                                    <br />
+                                    Of Our
+                                    <br />
+                                    Story!
+                                </h4>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- Team-->
+        <section class="page-section bg-light" id="team">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Our Amazing Team</h2>
+                    <h3 class="section-subheading text-muted">The passionate professionals driving digital innovation in Nairobi.</h3>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="assets/img/team/1.jpg" alt="Sharon Wachira" />
+                            <h4>Sharon Wachira</h4>
+                            <p class="text-muted">Founding Director</p>
+                            <a class="btn btn-dark btn-social mx-2" href="https://twitter.com/plugmonster7" aria-label="Twitter Profile"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="https://instagram.com/plugmein.digital" aria-label="Instagram Profile"><i class="fab fa-instagram"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="https://linkedin.com/company/pm-digital" aria-label="LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="assets/img/team/2.jpg" alt="Felix Macharia" />
+                            <h4>Felix Macharia</h4>
+                            <p class="text-muted">Creative Director</p>
+                            <a class="btn btn-dark btn-social mx-2" href="https://twitter.com/plugmonster7" aria-label="Twitter Profile"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="https://instagram.com/plugmein.digital" aria-label="Instagram Profile"><i class="fab fa-instagram"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="https://linkedin.com/company/pm-digital" aria-label="LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="assets/img/team/3.jpg" alt="Jane Wanja" />
+                            <h4>Jane Wanja</h4>
+                            <p class="text-muted">Business Administration</p>
+                            <a class="btn btn-dark btn-social mx-2" href="https://twitter.com/plugmonster7" aria-label="Twitter Profile"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="https://instagram.com/plugmein.digital" aria-label="Instagram Profile"><i class="fab fa-instagram"></i></a>
+                            <a class="btn btn-dark btn-social mx-2" href="https://linkedin.com/company/pm-digital" aria-label="LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-8 mx-auto text-center"><p class="large text-muted">Our team combines international expertise with local market knowledge to deliver exceptional digital solutions that drive real business results for our clients across Africa.</p></div>
+                </div>
+            </div>
+        </section>
+        <!-- Clients-->
+        <div class="py-5">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-3 col-sm-6 my-3">
+                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/logos/1.svg" alt="JABA SYRUP" aria-label="JABA SYRUP Logo" /></a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 my-3">
+                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/logos/2.svg" alt="MOTION" aria-label="MOTION Logo" /></a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 my-3">
+                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/logos/3.svg" alt="REACH DIGITAL GROUP" aria-label="REACH DIGITAL GROUP Logo" /></a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 my-3">
+                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="assets/img/logos/4.svg" alt="Wanderlust Diaries" aria-label="Wanderlust Diaries Logo" /></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Contact-->
+        <section class="page-section" id="contact">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Contact Us</h2>
+                    <h3 class="section-subheading text-muted">Ready to transform your digital presence? Get in touch with our team.</h3>
+                </div>
+                <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                    <div class="row align-items-stretch mb-5">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input class="form-control" id="name" type="text" placeholder="Your Name *" data-sb-validations="required" />
+                                <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control" id="email" type="email" placeholder="Your Email *" data-sb-validations="required,email" />
+                                <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
+                                <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
+                            </div>
+                            <div class="form-group mb-md-0">
+                                <input class="form-control" id="phone" type="tel" placeholder="Your Phone *" data-sb-validations="required" />
+                                <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group form-group-textarea mb-md-0">
+                                <textarea class="form-control" id="message" placeholder="Your Message *" data-sb-validations="required"></textarea>
+                                <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-none" id="submitSuccessMessage">
+                        <div class="text-center text-white mb-3">
+                            <div class="fw-bolder">Form submission successful!</div>
+                            To activate this form, sign up at
+                            <br />
+                            <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+                        </div>
+                    </div>
+                    <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
+                    <div class="text-center"><button class="btn btn-primary btn-xl text-uppercase" id="submitButton" type="submit">Send Message</button></div>
+                </form>
+            </div>
+        </section>
+        <!-- Footer-->
+        <footer class="footer py-4">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-4 text-lg-start">Copyright &copy; PM Digital 2022</div>
+                    <div class="col-lg-4 my-3 my-lg-0">
+                        <a class="btn btn-dark btn-social mx-2" href="https://twitter.com/plugmonster7" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="https://instagram.com/plugmein.digital" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="https://facebook.com/plugmonster" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="https://linkedin.com/company/pm-digital" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <div class="col-lg-4 text-lg-end">
+                        <a class="link-dark text-decoration-none me-3" href="#!">Privacy Policy</a>
+                        <a class="link-dark text-decoration-none" href="#!">Terms of Use</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Portfolio Modals-->
+        <!-- Portfolio item 1 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <h2 class="text-uppercase">UI/UX Design</h2>
+                                    <p class="item-intro text-muted">Creating intuitive user experiences that drive engagement.</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/1.jpg" alt="UI/UX Design" />
+                                    <p>Our UI/UX design services focus on creating seamless digital experiences that users love. We combine aesthetic appeal with functional design to ensure your digital products are both beautiful and easy to use.</p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>Category:</strong>
+                                            User Experience Design
+                                        </li>
+                                        <li>
+                                            <strong>Tools:</strong>
+                                            Figma, Adobe XD, Sketch
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Close Project
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 2 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <h2 class="text-uppercase">Web Development</h2>
+                                    <p class="item-intro text-muted">Building responsive, high-performance websites.</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/2.jpg" alt="Web Development" />
+                                    <p>From simple business websites to complex web applications, our development team creates robust, scalable solutions using the latest technologies. We ensure your website not only looks great but performs exceptionally across all devices.</p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>Category:</strong>
+                                            Web Development
+                                        </li>
+                                        <li>
+                                            <strong>Technologies:</strong>
+                                            HTML5, CSS3, JavaScript, React
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Close Project
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 3 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <h2 class="text-uppercase">Photography & Video</h2>
+                                    <p class="item-intro text-muted">Capturing compelling visual stories for your brand.</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/3.jpg" alt="Photography & Video" />
+                                    <p>Our visual content team specializes in creating stunning photography and engaging video content that tells your brand's story. From product photography to corporate videos, we help you connect with your audience visually.</p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>Category:</strong>
+                                            Visual Content Creation
+                                        </li>
+                                        <li>
+                                            <strong>Services:</strong>
+                                            Product Photography, Corporate Videos, Social Media Content
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Close Project
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 4 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <h2 class="text-uppercase">Digital Marketing</h2>
+                                    <p class="item-intro text-muted">Driving growth through strategic digital campaigns.</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/4.jpg" alt="Digital Marketing" />
+                                    <p>Our digital marketing strategies are designed to increase your online visibility, generate qualified leads, and drive sales. We combine data-driven insights with creative execution to deliver measurable results for your business.</p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>Category:</strong>
+                                            Digital Marketing
+                                        </li>
+                                        <li>
+                                            <strong>Channels:</strong>
+                                            SEO, Social Media, Email Marketing, PPC
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Close Project
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 5 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <h2 class="text-uppercase">Branding & Printing</h2>
+                                    <p class="item-intro text-muted">Creating memorable brand identities across all mediums.</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/5.jpg" alt="Branding & Printing" />
+                                    <p>We develop comprehensive brand identities that resonate with your target audience. From logo design to complete brand guidelines and high-quality printing services, we ensure your brand makes a lasting impression.</p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>Category:</strong>
+                                            Brand Identity
+                                        </li>
+                                        <li>
+                                            <strong>Services:</strong>
+                                            Logo Design, Brand Guidelines, Business Cards, Packaging
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Close Project
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 6 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-
